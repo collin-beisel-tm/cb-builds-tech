@@ -1,3 +1,20 @@
+/*css variables*/
+:root {
+  --background-color: #fff;
+  --primary-color: #848e86;
+  --secondary-color: #d1691c;
+  --tertiary-color: #2c2d2c;
+}
+
+/*base template styles*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-padding-top: 120px;
+}
+/*end Base template styles*/
+
 .App {
   text-align: center;
 }
@@ -31,9 +48,6 @@
 .bg-color {
   background-color: #fff;
 }
-.orange-text {
-  
-}
 
 @keyframes App-logo-spin {
   from {
@@ -43,3 +57,427 @@
     transform: rotate(360deg);
   }
 }
+
+
+/*header styles*/
+header {
+
+  padding: 20px 35px;
+  background-color: var(--background-color);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  font-family: sans-serif;
+  
+}
+
+header div {
+  width: 50%;
+  padding-right: 20em;
+  
+  height: auto;
+
+}
+
+header div h1 a {
+  color: var(--primary-color);
+  font-size: 50px;
+  font-style: italic;
+}
+
+header div h4 a {
+  color: var(--secondary-color);
+  margin-bottom: 50px;
+  font-size: 25px;
+  font-style: italic;
+}
+
+header a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+header nav {
+  
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+header nav ul li a {
+  padding: 10px 10px;
+  margin: 0 7px;
+  font-weight: bold;
+  font-size: 1.2vw;
+  border-radius: 25px;
+  border: solid var(--secondary-color);
+  border-width: thin;
+}
+/*psudo for header button highlight hover*/
+header nav ul li a:hover{
+  background: var(--background-color);
+  color: var(--secondary-color);
+  border-radius: 25px;
+  border: solid var(--primary-color);
+  text-shadow: none;
+}
+/*end header styles*/
+
+/*start hero styles*/
+.hero-container{
+  height: 450px;
+  padding: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  justify-content: start;
+  align-items: center;
+  font-family: sans-serif;
+  color: var(--secondary-color);
+}
+
+.hero-name {
+  flex-shrink: 1;
+  width: 50%vw;
+  margin: 10px;
+  font-size: 5vw;
+  text-align: center;
+}
+
+.hero-name h1 {
+  justify-content: center;
+}
+
+.hero-slogan {
+  width: 75%;
+  margin: 10px;
+  font-size: 14px;
+  color: var(--primary-color);
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.hero-image {
+  width: 200px;
+  height: 180px;
+  justify-content: center;
+  align-content: center;
+  
+}
+
+.hero-image img{
+  width: 100%;
+  height: 100%;
+  margin: 10px;
+  border-radius: 50%;
+  border: solid thin var(--primary-color);
+}
+
+/*end hero styles*/
+
+/*start get to know me styles*/
+.get-to-know-me-container {
+ 
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  background-color: var(--primary-color);
+}
+
+.get-to-know-me-container h2 {
+  color: var(--background-color);
+  font-size: 40px;
+}
+
+.get-to-know-me-container p {
+  color: var(--background-color);
+  padding-top: 30px;
+  font-size: 18px;
+  font-style: normal;
+  width: 75%;
+}
+
+/*end get to know me styles*/
+
+/*start projects styles*/
+
+#my-work h2 {
+  font-size: 40px;
+  text-align: center;
+  margin: 40px 0 20px 0;
+  color: var(--secondary-color);
+}
+.projects-container {
+  width: 60%;
+  margin: auto;
+}
+
+.projects-container > * {
+  flex-basis: 100%;
+}
+
+.projects-container h3 {
+  
+  font-size: 1em;
+  color: var(--tertiary-color);
+  text-decoration: underline var(--primary-color);
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-color);
+  border-radius: 25px;
+  margin-top: 10px;
+  
+}
+.projects-container h4 {
+  text-align: center;
+  width: 25%;
+  font-size: .75em;
+  border-radius: 25px;
+  color: var(--background-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--secondary-color);
+  margin-top: 5px;
+  
+}
+
+.project-container-1 {
+  flex-basis: 50%;
+  height: 15em;
+  padding: 0px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  font-style: italic;
+  
+}
+/*psudo class to highlight hover over project cards*/
+.project-container-1 :hover {
+  border: var(--secondary-color) solid thick;
+}
+
+.project1 {
+ 
+  flex-basis: 90%;
+  height: 100%;
+  background-image: url("./Images/memegram-screenshot.PNG");
+  background-size: cover;
+  background-position: top;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 25px;
+  border: var(--primary-color) solid thin;
+}
+
+.project-container-2 {
+  height:200px;
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  font-family: sans-serif;
+  font-style: italic;
+  
+}
+
+.project-container-2 a {
+  flex-basis: 46%;
+  height: 100%;
+  
+}
+
+.project-container-2 div :hover {
+  border: var(--secondary-color) solid thick;
+}
+
+.project-container-3 {
+  height:200px;
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  font-family: sans-serif;
+  font-style: italic;
+  
+}
+
+.project-container-3 a {
+  flex-basis: 46%;
+  height: 100%;
+  
+  
+}
+
+.project-container-3 div :hover {
+  border: var(--secondary-color) solid thick;
+}
+
+.project-card {
+  background-size: cover;
+  background-position: top;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: center;
+  border-radius: 25px;
+  border: var(--primary-color) solid thin;
+  margin-right: 5px;
+  height: 200px;
+}
+.project2-img{
+  background-image: url("./Images/game-grab-screenshot.PNG");
+}
+.project3-img{
+  background-image: url("./Images/weather-now-screenshot.PNG");
+}
+.project4-img{
+  background-image: url("./Images/build-a-day-screenshot.PNG");
+}
+.project5-img {
+  background-image: url("./Images/pswd-gen.jpg");
+}
+
+/*end projects styles*/
+
+/*Start reach out styles*/
+.reach-out {
+  background-color: var(--primary-color);
+  margin: 40px 0;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.reach-out h2{
+  font-size: 40px;
+  text-align: center;
+  margin: 0px 0 25px 0;
+  color: var(--background-color);
+}
+
+.reach-out div{
+  width: 50%;
+}
+.reach-out p {
+  font-size: 18px;
+  text-align: center;
+  color: var(--background-color);
+  border:solid thin var(--background-color);
+  border-radius: 25px;
+  margin-left: 25px;
+  justify-content: center;
+  padding: 10px;
+  
+}
+
+.contact-form {
+  font-size: 20px;
+  text-align: center;
+  margin: 20px 0;
+  color: var(--background-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+}
+
+.contact-form form {
+  display: flex;
+  border: var(--background-color)solid thin;
+  border-radius: 25px;
+
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.contact-form textarea, input, .placeholder{
+  border-radius: 25px;
+  text-align: center;
+}
+
+.reach-out address, .reach-out address a {
+  color: var(--background-color);
+  margin:10px 20px 0 0;
+  padding-top: 10px;
+  text-align: center;
+}
+/*End reach out styles*/
+
+
+/*start footer styles*/
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.footer {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.footer-logo {
+  width: 25%;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.footer-socials {
+  display: flex;
+  margin-left: 20%;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 15%;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.footer-socials a {
+  
+  color: var(--secondary-color);
+  text-decoration: none;
+  box-shadow: none;
+
+}
+.footer-text {
+  color: var(--primary-color);
+  margin-left: 10%;
+  
+
+}
+
+/*end footer styles*/
+

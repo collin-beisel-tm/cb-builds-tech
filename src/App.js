@@ -4,7 +4,6 @@ import { Nav, Navbar } from 'react-bootstrap';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
 import { About } from './components/About';
-import { Resume } from './components/Resume';
 import { Portfolio } from './components/Portfolio';
 import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
@@ -26,7 +25,7 @@ function App() {
           <Nav.Link as={Link} to="/get-to-know-me">Get To Know Me</Nav.Link>
           <Nav.Link as={Link} to="/my-work">My Work</Nav.Link>
           <Nav.Link as={Link} to="/reach-out">Reach Out</Nav.Link>
-          <Nav.Link as={Link} to="/skills-experience">Skills/Experience</Nav.Link>
+          <Nav.Link target='_blank' href="https://docs.google.com/document/d/1sF1xxJj3Dh67qv_51cXDJCbxsfBpxg_v/edit?usp=sharing&ouid=115403280112666854484&rtpof=true&sd=true">Skills/Experience</Nav.Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
@@ -36,7 +35,6 @@ function App() {
         <Route path="/get-to-know-me" element={<About />}/>
         <Route path="/my-work" element={<Portfolio />}/>
         <Route path="/reach-out" element={<Contact />}/>
-        <Route path="/skills-experience" element={<Resume />}/>
       </Routes>
     </div>
     <Footer />

@@ -15,6 +15,24 @@
 }
 /*end Base template styles*/
 
+.bg-grey {
+  background-color: var(--primary-color) !important;
+}
+
+.bg-orange {
+  color: var(--secondary-color);
+}
+
+.bg-btn {
+  background-color: var(--secondary-color) !important;
+  border: none !important;
+}
+
+.bg-btn:hover {
+  background-color: var(--primary-color) !important;
+  border: none !important;
+}
+
 .App {
   text-align: center;
 }
@@ -44,42 +62,33 @@
 .App-link {
   color: #61dafb;
 }
-
-.bg-white {
-  background-color: #fff;
+.bg-nav-item{
+  color: #848e86;
+  background-color: var(--background-color);
+  margin: auto;
 }
 
-.bg-orange {
-  background-color: #d1691c;
-}
-
-.bg-grey {
-  background-color: #848e86;
-}
-
-.bg-black {
-  background-color: #2c2d2c;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.bg-nav-item:active {
+  color:var(--secondary-color) !important
 }
 
 .carousel-control-prev-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23848e86' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+ }
+
+ .carousel-control-prev-icon:hover {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23d1691c' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
  }
  
  .carousel-control-next-icon {
    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23848e86' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
  }
 
+ .carousel-control-next-icon:hover {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23d1691c' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
 /*header styles*/
-header {
+.header {
 
   padding: 20px 35px;
   background-color: var(--background-color);
@@ -94,48 +103,19 @@ header {
   
 }
 
-header div {
-  width: 50%;
-  padding-right: 20em;
-  
-  height: auto;
-
+.header-logo {
+  width: auto;
+  height: 10vh;
+  border-radius: 15%;
 }
 
-header div h1 a {
-  color: var(--primary-color);
-  font-size: 50px;
-  font-style: italic;
+.header-logo:hover{
+  height: 10.5vh;
 }
 
-header div h4 a {
-  color: var(--secondary-color);
-  margin-bottom: 50px;
-  font-size: 25px;
-  font-style: italic;
-}
-
-header a {
-  text-decoration: none;
-  color: var(--primary-color);
-}
-
-header nav {
-  
-
+.header-nav-item{
   display: flex;
   flex-wrap: wrap;
-}
-
-header nav ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  list-style: none;
-}
-
-header nav ul li a {
   padding: 10px 10px;
   margin: 0 7px;
   font-weight: bold;
@@ -143,14 +123,27 @@ header nav ul li a {
   border-radius: 25px;
   border: solid var(--secondary-color);
   border-width: thin;
+  text-decoration: none;
 }
 /*psudo for header button highlight hover*/
-header nav ul li a:hover{
-  background: var(--background-color);
-  color: var(--secondary-color);
-  border-radius: 25px;
+.header-nav-item:hover{
+  background-color: var(--secondary-color);
   border: solid var(--primary-color);
   text-shadow: none;
+}
+
+.header-nav-item:active{
+  background-color: var(--secondary-color) !important;
+  border: solid var(--primary-color) !important;
+  text-shadow: none !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .header-nav-item {
+    font-size: 5vw;
+    margin-bottom: .25rem;
+    width: 15rem;
+  }
 }
 /*end header styles*/
 
@@ -234,230 +227,20 @@ header nav ul li a:hover{
 
 /*end get to know me styles*/
 
-/*start projects styles*/
+/*Start skills styles*/
 
-#my-work h2 {
-  font-size: 40px;
-  text-align: center;
-  margin: 40px 0 20px 0;
-  color: var(--secondary-color);
-}
-.projects-container {
-  width: 60%;
+.skills {
+  width: 50vw;
   margin: auto;
 }
 
-.projects-container > * {
-  flex-basis: 100%;
-}
 
-.projects-container h3 {
-  
-  font-size: 1em;
-  color: var(--tertiary-color);
-  text-decoration: underline var(--primary-color);
-  justify-content: center;
-  align-items: center;
-  background-color: var(--primary-color);
-  border-radius: 25px;
-  margin-top: 10px;
-  
-}
-.projects-container h4 {
-  text-align: center;
-  width: 25%;
-  font-size: .75em;
-  border-radius: 25px;
-  color: var(--background-color);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--secondary-color);
-  margin-top: 5px;
-  
-}
-
-.project-container-1 {
-  flex-basis: 50%;
-  height: 15em;
-  padding: 0px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  font-family: sans-serif;
-  font-style: italic;
-  
-}
-/*psudo class to highlight hover over project cards*/
-.project-container-1 :hover {
-  border: var(--secondary-color) solid thick;
-}
-
-.project1 {
- 
-  flex-basis: 90%;
-  height: 100%;
-  background-image: url("./Images/memegram-screenshot.PNG");
-  background-size: cover;
-  background-position: top;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  border-radius: 25px;
-  border: var(--primary-color) solid thin;
-}
-
-.project-container-2 {
-  height:200px;
-  margin: 10px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: flex-start;
-  font-family: sans-serif;
-  font-style: italic;
-  
-}
-
-.project-container-2 a {
-  flex-basis: 46%;
-  height: 100%;
-  
-}
-
-.project-container-2 div :hover {
-  border: var(--secondary-color) solid thick;
-}
-
-.project-container-3 {
-  height:200px;
-  margin: 10px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: flex-start;
-  font-family: sans-serif;
-  font-style: italic;
-  
-}
-
-.project-container-3 a {
-  flex-basis: 46%;
-  height: 100%;
-  
-  
-}
-
-.project-container-3 div :hover {
-  border: var(--secondary-color) solid thick;
-}
-
-.project-card {
-  background-size: cover;
-  background-position: top;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-  align-items: center;
-  border-radius: 25px;
-  border: var(--primary-color) solid thin;
-  margin-right: 5px;
-  height: 200px;
-}
-.project2-img{
-  background-image: url("./Images/game-grab-screenshot.PNG");
-}
-.project3-img{
-  background-image: url("./Images/weather-now-screenshot.PNG");
-}
-.project4-img{
-  background-image: url("./Images/build-a-day-screenshot.PNG");
-}
-.project5-img {
-  background-image: url("./Images/pswd-gen.jpg");
-}
-
-/*end projects styles*/
-
-/*Start reach out styles*/
-.reach-out {
-  background-color: var(--primary-color);
-  margin: 40px 0;
-  padding: 20px 0;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.reach-out h2{
-  font-size: 40px;
-  text-align: center;
-  margin: 0px 0 25px 0;
-  color: var(--background-color);
-}
-
-.reach-out div{
-  width: 50%;
-}
-.reach-out p {
-  font-size: 18px;
-  text-align: center;
-  color: var(--background-color);
-  border:solid thin var(--background-color);
-  border-radius: 25px;
-  margin-left: 25px;
-  justify-content: center;
-  padding: 10px;
-  
-}
-
-.contact-form {
-  font-size: 20px;
-  text-align: center;
-  margin: 20px 0;
-  color: var(--background-color);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-
-}
-
-.contact-form form {
-  display: flex;
-  border: var(--background-color)solid thin;
-  border-radius: 25px;
-
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.contact-form textarea, input, .placeholder{
-  border-radius: 25px;
-  text-align: center;
-}
-
-.reach-out address, .reach-out address a {
-  color: var(--background-color);
-  margin:10px 20px 0 0;
-  padding-top: 10px;
-  text-align: center;
-}
-/*End reach out styles*/
-
+/*End skills styles*/
 
 /*start footer styles*/
 .footer-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
   flex-wrap: wrap;
   width: 100%;
 }
@@ -466,6 +249,9 @@ header nav ul li a:hover{
   display: flex;
   width: 100%;
   flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: auto;
 }
 
 .footer-logo {
@@ -476,25 +262,20 @@ header nav ul li a:hover{
 
 .footer-socials {
   display: flex;
-  margin-left: 20%;
-  flex-direction: row;
   justify-content: space-evenly;
-  width: 15%;
   align-items: flex-start;
-  flex-wrap: wrap;
+  list-style: none;
 }
 
-.footer-socials a {
+.footer-socials li img {
   
-  color: var(--secondary-color);
-  text-decoration: none;
-  box-shadow: none;
+  width: 3rem;
+  height: 3rem;
 
 }
 .footer-text {
-  color: var(--primary-color);
-  margin-left: 10%;
-  
+  color: var(--secondary-color);
+  margin-top: 2vh;
 
 }
 

@@ -1,31 +1,29 @@
 import React from 'react'
-import 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 import Logo from "../Images/cb-builds.PNG";
+import gitHub from "../Images/GitHub-Mark.png";
+import linkedIn from "../Images/linkedin-logo.png";
+import fb from "../Images/fb.jpg";
 
 export const Footer = () => {
   return (
-    <section class="footer-container" sticky="bottom">  
-         <div class="footer">
-             <div class="footer-logo">
-                <a href="/"><img src={Logo} alt="cb builds logo" /></a>
-             </div>
-            <div class="footer-text">
-                <h3>Made with ❤️ by yours truly! - Collin Beisel</h3>
-            </div>
-
-            <div class="footer-socials">
-                <a href="https://linkedin.com/in/collin-beisel" target="_blank">
-                    <h4>LinkedIn</h4>
-                </a>
-                <a href="https://github.com/collin-beisel-tm" target="_blank">
-                    <h4>GitHub</h4>
-                </a>
-                <a href="https://facebook.com/collin.beisel" target="_blank">
-                    <h4>Facebook</h4>
-                </a>
-            </div>
-        </div>
-    </section>
+    <Container className='footer-container'>
+        <Row className='footer'>
+            <Col className='text-center py-3'>
+                <img src={Logo} alt='Cb Builds Logo'/>
+            </Col>
+            <Col className='text-center py-3'>
+                <h4 className='footer-text'>Build it better with CB!</h4>
+            </Col>
+            <Col className='text-center py-3'>
+                <ul className='footer-socials'>
+                    <li><a><img src={gitHub} /></a></li>
+                    <li><a><img src={linkedIn} /></a></li>
+                    <li><a><img src={fb} /></a></li>
+                </ul>
+            </Col>
+        </Row>
+    </Container>
   )
 }
 

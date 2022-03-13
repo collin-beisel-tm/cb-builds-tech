@@ -6,26 +6,27 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import { About } from './components/About';
 import { Portfolio } from './components/Portfolio';
 import { Contact } from './components/Contact';
+import { Resume } from './components/Resume';
 import { Footer } from './components/Footer';
+import cbBuilds from './Images/logo.png';
 
 function App() {
   return (
 <Router>
   <div className='App'>
-    <Navbar bg="color" sticky="top" expand="sm" collapseOnSelect>
+    <Navbar bg="nav-item" sticky="top" expand="lg"  className='mx-5'>
       <Navbar.Brand>
         <Nav.Link href="/">
-          <h1>CB Builds</h1>
-          <h4>Est. 2021</h4>
+          <img className='header-logo' src={cbBuilds} alt='CB Builds Logo'/>
         </Nav.Link>
       </Navbar.Brand>
-      <Navbar.Toggle />
-      <Navbar.Collapse>
+      <Navbar.Toggle className='m-3 border-0'/>
+      <Navbar.Collapse  className='justify-content-end'>
         <Nav>
-          <Nav.Link as={Link} to="/get-to-know-me">Get To Know Me</Nav.Link>
-          <Nav.Link as={Link} to="/my-work">My Work</Nav.Link>
-          <Nav.Link as={Link} to="/reach-out">Reach Out</Nav.Link>
-          <Nav.Link target='_blank' href="https://docs.google.com/document/d/1sF1xxJj3Dh67qv_51cXDJCbxsfBpxg_v/edit?usp=sharing&ouid=115403280112666854484&rtpof=true&sd=true">Skills/Experience</Nav.Link>
+          <Nav.Link className='header-nav-item' as={Link} to="/get-to-know-me">Get To Know Me</Nav.Link>
+          <Nav.Link className='header-nav-item' as={Link} to="/my-work">My Work</Nav.Link>
+          <Nav.Link className='header-nav-item' as={Link} to="/reach-out">Reach Out</Nav.Link>
+          <Nav.Link className='header-nav-item' as={Link} to="/skills-experience">Skills/Experience</Nav.Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
@@ -35,6 +36,7 @@ function App() {
         <Route path="/get-to-know-me" element={<About />}/>
         <Route path="/my-work" element={<Portfolio />}/>
         <Route path="/reach-out" element={<Contact />}/>
+        <Route path="/skills-experience" element={<Resume />}/>
       </Routes>
     </div>
     <Footer />

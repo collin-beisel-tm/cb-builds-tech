@@ -10,7 +10,7 @@ import budgetTracker from '../Images/budget-pwa.png';
 export const Portfolio = () => {
     
   return (
-    <Carousel>
+    <Carousel className='mt-3'>
         <Carousel.Item>
             <img
             className="d-flex w-75 mx-auto"

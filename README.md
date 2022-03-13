@@ -15,7 +15,7 @@
   * [User Story](#User-Story)
   * [Acceptance Criteria](#acceptance-criteria)
 
-![Portfolio Screenshot](https://github.com/collin-beisel-tm/cb-builds-tech/blob/main/screenshots/readme-screenshot1.PNG)
+![Portfolio Screenshot](https://github.com/collin-beisel-tm/cb-builds-tech/blob/main/src/Images/readme-screenshot1.PNG)
 
 ## Links
  - Github Repo: https://github.com/collin-beisel-tm/cb-builds-tech

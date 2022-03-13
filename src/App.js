@@ -22,7 +22,7 @@ function App() {
       </Navbar.Brand>
       <Navbar.Toggle className='m-3 border-0'/>
       <Navbar.Collapse  className='justify-content-end'>
-        <Nav>
+        <Nav className='m-0'>
           <Nav.Link className='header-nav-item' as={Link} to="/get-to-know-me">Get To Know Me</Nav.Link>
           <Nav.Link className='header-nav-item' as={Link} to="/my-work">My Work</Nav.Link>
           <Nav.Link className='header-nav-item' as={Link} to="/reach-out">Reach Out</Nav.Link>

@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/cb-builds-tech/static/css/main.9824df40.css",
+    "main.js": "/cb-builds-tech/static/js/main.d54625ec.js",
+    "static/js/787.1bbea4ef.chunk.js": "/cb-builds-tech/static/js/787.1bbea4ef.chunk.js",
+    "static/media/game-grab-screenshot.PNG": "/cb-builds-tech/static/media/game-grab-screenshot.9331303503eb2c013d5f.PNG",
+    "static/media/pswd-gen.jpg": "/cb-builds-tech/static/media/pswd-gen.74e5074f32a36207fa07.jpg",
+    "static/media/headshot.jpg": "/cb-builds-tech/static/media/headshot.00224e42f8fd5db92a2f.jpg",
+    "static/media/social-media.png": "/cb-builds-tech/static/media/social-media.18a496d5e3596a7d094b.png",
+    "static/media/budget-pwa.png": "/cb-builds-tech/static/media/budget-pwa.0b362f23e52cc54ffb0b.png",
+    "static/media/weather-now-screenshot.PNG": "/cb-builds-tech/static/media/weather-now-screenshot.0522bd783c482966cd1e.PNG",
+    "static/media/build-a-day-screenshot.PNG": "/cb-builds-tech/static/media/build-a-day-screenshot.3a758962a456eb31b7d0.PNG",
+    "static/media/logo.png": "/cb-builds-tech/static/media/logo.c9a091ebfd61d8b7f58d.png",
+    "static/media/fb.jpg": "/cb-builds-tech/static/media/fb.8874a4d0ea18232c7016.jpg",
+    "static/media/cb-builds.PNG": "/cb-builds-tech/static/media/cb-builds.d197058c1fc28e192d9c.PNG",
+    "index.html": "/cb-builds-tech/index.html",
+    "main.9824df40.css.map": "/cb-builds-tech/static/css/main.9824df40.css.map",
+    "main.d54625ec.js.map": "/cb-builds-tech/static/js/main.d54625ec.js.map",
+    "787.1bbea4ef.chunk.js.map": "/cb-builds-tech/static/js/787.1bbea4ef.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9824df40.css",
+    "static/js/main.d54625ec.js"
+  ]
+}

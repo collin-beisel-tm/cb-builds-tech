@@ -16,7 +16,7 @@ function App() {
   <div className='App'>
     <Navbar bg="nav-item" sticky="top" expand="lg"  className='mx-5'>
       <Navbar.Brand>
-        <Nav.Link href="/get-to-know-me">
+        <Nav.Link href="/cb-builds-tech/get-to-know-me">
           <img className='header-logo' src={cbBuilds} alt='CB Builds Logo'/>
         </Nav.Link>
       </Navbar.Brand>
@@ -32,6 +32,7 @@ function App() {
     </Navbar>
     <div>
       <Routes>
+        <Route path="/cb-builds-tech/get-to-know-me" element={<About />}/>
         <Route path="/get-to-know-me" element={<About />}/>
         <Route path="/my-work" element={<Portfolio />}/>
         <Route path="/reach-out" element={<Contact />}/>

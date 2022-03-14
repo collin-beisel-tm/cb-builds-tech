@@ -24,7 +24,7 @@ export const About = () => {
                 <div class="get-to-know-me-container">
                     <h2>Get To Know Me</h2>
                     <p>
-                        "Hey folks! I'm currently an IT program manager for Toyota Motors North America. I oversee some of Toyota's customer
+                        "Hey folks! I'm currently an IT program manager for Toyota Motor North America. I oversee some of Toyota's customer
                         facing sites like Toyota.com, ToyotaCertified.com, and Toyota.com/Racing. In my spare time I am a student learning full
                         stack web development and hope to move into a more technical position with Toyota when my program is complete. I am currently
                         proficient in  HTML, CSS, and JavaScript and will soon be learning technologies like API's, REACT, and NoSQL. In my personal life

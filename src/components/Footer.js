@@ -17,9 +17,9 @@ export const Footer = () => {
             </Col>
             <Col className='text-center py-3'>
                 <ul className='footer-socials'>
-                    <li><a><img src={gitHub} /></a></li>
-                    <li><a><img src={linkedIn} /></a></li>
-                    <li><a><img src={fb} /></a></li>
+                    <li><a target='_blank' href="https://github.com/collin-beisel-tm"><img src={gitHub} /></a></li>
+                    <li><a target='_blank' href='https://linkedin.com/in/collin-beisel'><img src={linkedIn} /></a></li>
+                    <li><a target='_blank' href='https://www.facebook.com/collin.beisel/'><img src={fb} /></a></li>
                 </ul>
             </Col>
         </Row>

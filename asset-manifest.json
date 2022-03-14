@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/cb-builds-tech/static/css/main.9824df40.css",
-    "main.js": "/cb-builds-tech/static/js/main.d54625ec.js",
+    "main.js": "/cb-builds-tech/static/js/main.2fc74c16.js",
     "static/js/787.1bbea4ef.chunk.js": "/cb-builds-tech/static/js/787.1bbea4ef.chunk.js",
     "static/media/game-grab-screenshot.PNG": "/cb-builds-tech/static/media/game-grab-screenshot.9331303503eb2c013d5f.PNG",
     "static/media/pswd-gen.jpg": "/cb-builds-tech/static/media/pswd-gen.74e5074f32a36207fa07.jpg",
@@ -15,11 +15,11 @@
     "static/media/cb-builds.PNG": "/cb-builds-tech/static/media/cb-builds.d197058c1fc28e192d9c.PNG",
     "index.html": "/cb-builds-tech/index.html",
     "main.9824df40.css.map": "/cb-builds-tech/static/css/main.9824df40.css.map",
-    "main.d54625ec.js.map": "/cb-builds-tech/static/js/main.d54625ec.js.map",
+    "main.2fc74c16.js.map": "/cb-builds-tech/static/js/main.2fc74c16.js.map",
     "787.1bbea4ef.chunk.js.map": "/cb-builds-tech/static/js/787.1bbea4ef.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9824df40.css",
-    "static/js/main.d54625ec.js"
+    "static/js/main.2fc74c16.js"
   ]
 }

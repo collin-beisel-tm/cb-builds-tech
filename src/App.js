@@ -2,7 +2,7 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import { Nav, Navbar } from 'react-bootstrap';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-
+import { React, useState } from 'react';
 import { About } from './components/About';
 import { Portfolio } from './components/Portfolio';
 import { Contact } from './components/Contact';
@@ -11,18 +11,20 @@ import { Footer } from './components/Footer';
 import cbBuilds from './Images/logo.png';
 
 function App() {
+const [expanded, setExpanded] = useState(false);
+
   return (
 <Router basename={process.env.PUBLIC_URL}>
   <div className='App'>
-    <Navbar bg="nav-item" sticky="top" expand="lg"  className='mx-5'>
+    <Navbar bg="nav-item" sticky="top" expanded={expanded} expand="lg"  className='mx-5'>
       <Navbar.Brand>
         <Nav.Link href="/">
           <img className='header-logo' src={cbBuilds} alt='CB Builds Logo'/>
         </Nav.Link>
       </Navbar.Brand>
-      <Navbar.Toggle className='m-3 border-0'/>
+      <Navbar.Toggle onClick={() => setExpanded(expanded ? false : "expanded")} className='m-3 border-0'/>
       <Navbar.Collapse  className='justify-content-end'>
-        <Nav className='m-0'>
+        <Nav onClick={() => setTimeout(() => {setExpanded(false)}, 150)} className='m-0'>
           <Nav.Link className='header-nav-item' as={Link} to="/get-to-know-me">Get To Know Me</Nav.Link>
           <Nav.Link className='header-nav-item' as={Link} to="/my-work">My Work</Nav.Link>
           <Nav.Link className='header-nav-item' as={Link} to="/reach-out">Reach Out</Nav.Link>

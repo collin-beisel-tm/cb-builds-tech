@@ -1,10 +1,10 @@
 {
   "files": {
     "main.css": "/static/css/main.8f91516e.css",
-    "main.js": "/static/js/main.0b4559b4.js",
+    "main.js": "/static/js/main.7fdf3187.js",
     "static/js/787.1bbea4ef.chunk.js": "/static/js/787.1bbea4ef.chunk.js",
+    "static/media/baylees-boards.PNG": "/static/media/baylees-boards.cb72a4286357519d2194.PNG",
     "static/media/game-grab-screenshot.PNG": "/static/media/game-grab-screenshot.9331303503eb2c013d5f.PNG",
-    "static/media/pswd-gen.jpg": "/static/media/pswd-gen.74e5074f32a36207fa07.jpg",
     "static/media/headshot.jpg": "/static/media/headshot.00224e42f8fd5db92a2f.jpg",
     "static/media/social-media.png": "/static/media/social-media.18a496d5e3596a7d094b.png",
     "static/media/budget-pwa.png": "/static/media/budget-pwa.0b362f23e52cc54ffb0b.png",
@@ -15,11 +15,11 @@
     "static/media/cb-builds.PNG": "/static/media/cb-builds.d197058c1fc28e192d9c.PNG",
     "index.html": "/index.html",
     "main.8f91516e.css.map": "/static/css/main.8f91516e.css.map",
-    "main.0b4559b4.js.map": "/static/js/main.0b4559b4.js.map",
+    "main.7fdf3187.js.map": "/static/js/main.7fdf3187.js.map",
     "787.1bbea4ef.chunk.js.map": "/static/js/787.1bbea4ef.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8f91516e.css",
-    "static/js/main.0b4559b4.js"
+    "static/js/main.7fdf3187.js"
   ]
 }

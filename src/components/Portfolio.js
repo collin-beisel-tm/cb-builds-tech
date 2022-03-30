@@ -4,13 +4,27 @@ import memegram from '../Images/social-media.png';
 import gamegrab from '../Images/game-grab-screenshot.PNG';
 import weatherNow from '../Images/weather-now-screenshot.PNG';
 import buildADay from '../Images/build-a-day-screenshot.PNG';
-import pswdGen from '../Images/pswd-gen.jpg';
+import bayleesBoards from '../Images/baylees-boards.PNG';
 import budgetTracker from '../Images/budget-pwa.png';
 
 export const Portfolio = () => {
     
   return (
     <Carousel className='mt-3 carousel'>
+        <Carousel.Item className='carousel'>
+            <img
+            className="d-flex w-75 mx-auto"
+            src={bayleesBoards}
+            alt="Baylee's Boards"
+            />
+            <Carousel.Caption className='bg-grey carousel-caption'>
+            <h3>Baylee's Boards</h3>
+            <h6>Built With: REACT, MongoDB, Stripe</h6>
+            <p>An E-Commerce site for charcuterie boards.</p>
+            <Button className='m-1' href='https://github.com/Blakedoghyian/Baylees-Boards' target='_blank'variant="outline-dark">Github Repo</Button>
+            <Button className='m-1' href='http://www.bayleesboards.com/' target='_blank'variant="outline-dark">Deployed App</Button>
+            </Carousel.Caption>
+        </Carousel.Item>
         <Carousel.Item className='carousel'>
             <img
             className="d-flex w-75 mx-auto"
@@ -65,20 +79,6 @@ export const Portfolio = () => {
             <p>A workday scheduling app.</p>
             <Button className='m-1' href='https://github.com/collin-beisel-tm/build-a-day' target='_blank'variant="outline-dark">Github Repo</Button>
             <Button className='m-1' href='https://collin-beisel-tm.github.io/build-a-day/' target='_blank'variant="outline-dark">Deployed App</Button>
-            </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item className='carousel'>
-            <img
-            className="d-flex w-75 mx-auto"
-            src={pswdGen}
-            alt="Password Generator"
-            />
-            <Carousel.Caption className='bg-grey carousel-caption'>
-            <h3>Password Generator</h3>
-            <h6>Built With: JS, HTML, CSS</h6>
-            <p>A password generating app.</p>
-            <Button className='m-1' href='https://github.com/collin-beisel-tm/password-generator' target='_blank'variant="outline-dark">Github Repo</Button>
-            <Button className='m-1' href='https://collin-beisel-tm.github.io/password-generator/' target='_blank'variant="outline-dark">Deployed App</Button>
             </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item className='carousel'>
